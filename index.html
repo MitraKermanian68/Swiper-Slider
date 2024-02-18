@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Touch Slider Make Swiper Slider</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <img src="./images/menu.png" class="menu-icon" />
+        <p>MEET APP</p>
+        <img src="./images/bell.png" class="bell-icon" />
+      </div>
+
+      <div class="main-text">
+        <h2>OUR TEAM</h2>
+        <small
+          >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
+          tenetur, veniam sunt, assumenda ratione est necessitatibus optio
+          incidunt facere provident omnis culpa error, inventore praesentium
+          dolorem ullam mollitia. Quibusdam, consectetur!</small
+        >
+      </div>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/model1.jpg" />
+            <div class="info">
+              <h3>Nina Mora</h3>
+              <p>CEO & Founder</p>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/model2.jpg" />
+            <div class="info">
+              <h3>Mira Saya</h3>
+              <p>Developer</p>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/model3.jpg" />
+            <div class="info">
+              <h3>Sony kyrka</h3>
+              <p>web designer</p>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/model4.jpg" />
+            <div class="info">
+              <h3>Naumi Kuyushi</h3>
+              <p>App Developer</p>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/model5.jpg" />
+            <div class="info">
+              <h3>Kyli Jenner</h3>
+              <p>Model Brand</p>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      
+
+      <div class="footer-menu">
+        <img src="./images/up arrow.png" />
+        <img src="./images/search.png" />
+        <img src="./images/account.png" />
+        <img src="./images/redirect.png" />
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 40,
+        centeredSlides: true,
+        grabCursor: true,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
